@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="quiz-container">
+    <img src="Baylor_University_seal.png" alt="Baylor University Seal" id="university-seal">
+    <h1>Spring Testing Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-correct="A">
+            <p>Question 1: What is the primary purpose of using mock objects in Spring Testing?</p>
+            <label><input type="radio" name="q1" value="A"> To replicate the behavior of real objects in a controlled way</label>
+            <label><input type="radio" name="q1" value="B"> To increase the execution time of tests</label>
+            <label><input type="radio" name="q1" value="C"> To deploy the application to a production environment</label>
+        </div>
+        <div class="question" data-correct="B">
+            <p>Question 2: Which of the following best describes the TestContext framework in Spring?</p>
+            <label><input type="radio" name="q2" value="A"> A framework that provides only JDBC testing capabilities</label>
+            <label><input type="radio" name="q2" value="B"> A framework that supports integration testing by loading Spring ApplicationContext</label>
+            <label><input type="radio" name="q2" value="C"> A tool for static code analysis during the build process</label>
+        </div>
+        <div class="question" data-correct="B">
+            <p>Question 3: What is the main advantage of using the Spring MVC Test framework?</p>
+            <label><input type="radio" name="q3" value="A"> It requires a servlet container to run tests</label>
+            <label><input type="radio" name="q3" value="B"> It allows for testing the web layer without starting an HTTP server</label>
+            <label><input type="radio" name="q3" value="C"> It automates the deployment of web applications to live servers </label>
+        </div>
+        <div class="question" data-correct="C">
+            <p>Question 4: In the context of Spring Testing, what is the WebTestClient primarily used for?</p>
+            <label><input type="radio" name="q4" value="A"> Managing database connections in a reactive application</label>
+            <label><input type="radio" name="q4" value="B"> Generating documentation for RESTful APIs</label>
+            <label><input type="radio" name="q4" value="C"> Performing end-to-end testing of reactive web applications</label>
+        </div>
+        <button type="submit">Submit</button>
+
+    </form>
+    <div id="result"></div>
+</div>
+
+
+<footer>
+    <p>Authors: Paul Wolfe & Matthew Hays</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
